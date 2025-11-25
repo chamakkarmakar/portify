@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-gray-50">
+
+  <body class="bg-gray-50 scroll-smooth">
     <!-- Header -->
     <header class="bg-white shadow-md fixed w-full top-0 z-50">
       <nav class="container mx-auto px-6 py-4">
@@ -97,28 +99,127 @@
 
     <!-- About -->
     <section id="about" class="py-20">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center mb-12 gradient-text">About Me</h2>
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <div class="w-80 h-80 mx-auto bg-gradient-to-br from-blue-200 to-purple-300 rounded-full flex items-center justify-center shadow-2xl">
-                            <img src="assets/profile.png" alt="profile">
-                        </div>
-                    </div>
-                    <div>
-                        <p class="text-lg mb-4">
-                             I'm enthusiastic and self-motivated frontend developer with knack for turning design concepts into functional websites.
-                        </p>
-                        <p class="text-lg mb-4">
-                            My journey in tech started with a curiosity about how websites work, and it has evolved into a career I'm deeply passionate about. I love solving complex problems and bringing ideas to life through code.
-                        </p>
-                        <p class="text-lg ">
-                            When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee.
-                        </p>
-                    </div>
-                </div>
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 gradient-text">
+          About Me
+        </h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div
+              class="w-80 h-80 mx-auto bg-gradient-to-br from-blue-200 to-purple-300 rounded-full flex items-center justify-center shadow-2xl"
+            >
+              <img src="assets/profile.png" alt="profile" />
             </div>
-        </section>
+          </div>
+          <div>
+            <p class="text-lg mb-4">
+              I'm enthusiastic and self-motivated frontend developer with knack
+              for turning design concepts into functional websites.
+            </p>
+            <p class="text-lg mb-4">
+              My journey in tech started with a curiosity about how websites
+              work, and it has evolved into a career I'm deeply passionate
+              about. I love solving complex problems and bringing ideas to life
+              through code.
+            </p>
+            <p class="text-lg">
+              When I'm not coding, you can find me exploring new technologies,
+              contributing to open-source projects, or enjoying a good cup of
+              coffee.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">Skills</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <div class="mb-6">
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">HTML</span>
+                <span id="label1">0%</span>
+              </div>
+              <div class="w-full bg-gray-300 rounded-full h-2">
+                <div
+                  id="bar1"
+                  class="h-2 bg-blue-500 rounded-full"
+                  style="width: 0%"
+                ></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">CSS</span>
+                <span id="label2">0%</span>
+              </div>
+              <div class="w-full bg-gray-300 rounded-full h-2">
+                <div
+                  id="bar2"
+                  class="h-2 bg-green-500 rounded-full"
+                  style="width: 0%"
+                ></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">JavaScript</span>
+                <span id="label3">0%</span>
+              </div>
+              <div class="w-full bg-gray-300 rounded-full h-2">
+                <div
+                  id="bar3"
+                  class="h-2 bg-yellow-500 rounded-full"
+                  style="width: 0%"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div class="mb-6">
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">React</span>
+                <span id="label4">0%</span>
+              </div>
+              <div class="w-full bg-gray-300 rounded-full h-2">
+                <div
+                  id="bar4"
+                  class="h-2 bg-purple-500 rounded-full"
+                  style="width: 0%"
+                ></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">Node.js</span>
+                <span id="label5">0%</span>
+              </div>
+              <div class="w-full bg-gray-300 rounded-full h-2">
+                <div
+                  id="bar5"
+                  class="h-2 bg-teal-500 rounded-full"
+                  style="width: 0%"
+                ></div>
+              </div>
+          </div>
+            <div class="mb-6">
+                <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">Database Management</span>
+                <span id="label6">0%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded-full h-2">
+                <div
+                    id="bar6"
+                    class="h-2 bg-red-500 rounded-full"
+                    style="width: 0%"
+                ></div>
+                </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Services Section -->
     <section id="services" class="py-16 md:py-24 bg-gray-50">
@@ -196,7 +297,13 @@
             class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
           >
             <div class="w-20 h-20 mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#2797dd" d="M128 320L24.5 320c-24.9 0-40.2-27.1-27.4-48.5L50 183.3C58.7 168.8 74.3 160 91.2 160l95 0c76.1-128.9 189.6-135.4 265.5-124.3 12.8 1.9 22.8 11.9 24.6 24.6 11.1 75.9 4.6 189.4-124.3 265.5l0 95c0 16.9-8.8 32.5-23.3 41.2l-88.2 52.9c-21.3 12.8-48.5-2.6-48.5-27.4L192 384c0-35.3-28.7-64-64-64l-.1 0zM400 160a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                  fill="#2797dd"
+                  d="M128 320L24.5 320c-24.9 0-40.2-27.1-27.4-48.5L50 183.3C58.7 168.8 74.3 160 91.2 160l95 0c76.1-128.9 189.6-135.4 265.5-124.3 12.8 1.9 22.8 11.9 24.6 24.6 11.1 75.9 4.6 189.4-124.3 265.5l0 95c0 16.9-8.8 32.5-23.3 41.2l-88.2 52.9c-21.3 12.8-48.5-2.6-48.5-27.4L192 384c0-35.3-28.7-64-64-64l-.1 0zM400 160a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
+                />
+              </svg>
             </div>
             <h3 class="text-2xl font-bold text-gray-800 mb-4">
               Performance Optimization
@@ -231,13 +338,20 @@
             class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
           >
             <div class="w-20 h-20 mx-auto mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#e74b4b" d="M461.2 18.9C472.7 24 480 35.4 480 48l0 416c0 12.6-7.3 24-18.8 29.1s-24.8 3.2-34.3-5.1l-46.6-40.7c-43.6-38.1-98.7-60.3-156.4-63l0 95.7c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-96C57.3 384 0 326.7 0 256S57.3 128 128 128l84.5 0c61.8-.2 121.4-22.7 167.9-63.3l46.6-40.7c9.4-8.3 22.9-10.2 34.3-5.1zM224 320l0 .2c70.3 2.7 137.8 28.5 192 73.4l0-275.3c-54.2 44.9-121.7 70.7-192 73.4L224 320z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                  fill="#e74b4b"
+                  d="M461.2 18.9C472.7 24 480 35.4 480 48l0 416c0 12.6-7.3 24-18.8 29.1s-24.8 3.2-34.3-5.1l-46.6-40.7c-43.6-38.1-98.7-60.3-156.4-63l0 95.7c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-96C57.3 384 0 326.7 0 256S57.3 128 128 128l84.5 0c61.8-.2 121.4-22.7 167.9-63.3l46.6-40.7c9.4-8.3 22.9-10.2 34.3-5.1zM224 320l0 .2c70.3 2.7 137.8 28.5 192 73.4l0-275.3c-54.2 44.9-121.7 70.7-192 73.4L224 320z"
+                />
+              </svg>
             </div>
             <h3 class="text-2xl font-bold text-gray-800 mb-4">
               Digital Marketing
             </h3>
             <p class="text-gray-600">
-              Promoting brands, products, or services through digital channels and technologies
+              Promoting brands, products, or services through digital channels
+              and technologies
             </p>
           </div>
         </div>
@@ -371,7 +485,6 @@
                     />
                   </svg>
                 </a>
-                
               </div>
             </div>
           </div>
@@ -421,12 +534,14 @@
     </section>
 
     <!-- Footer -->
-        <footer class="bg-gray-800 py-8">
-            <div class="container mx-auto px-6 text-center">
-                <p class="text-gray-400">&copy; 2025 Chamak Karmakar. All rights reserved.</p>
-                <p class="text-gray-500 mt-2">Built with passion and code ❤️</p>
-            </div>
-        </footer>
+    <footer class="bg-gray-800 py-8">
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-gray-400">
+          &copy; 2025 Chamak Karmakar. All rights reserved.
+        </p>
+        <p class="text-gray-500 mt-2">Built with passion and code ❤️</p>
+      </div>
+    </footer>
   </body>
 
   <script>
@@ -445,6 +560,34 @@
         mobileMenu.classList.add("hidden");
       });
     });
+
+    // Skill bar animation
+    const targets = [95, 85, 70, 60, 55, 75];
+
+    const speed = 20;
+
+    function animateProgress(id, labelId, target) {
+      let width = 0;
+      const bar = document.getElementById(id);
+      const label = document.getElementById(labelId);
+
+      const interval = setInterval(() => {
+        if (width >= target) {
+          clearInterval(interval);
+        } else {
+          width++;
+          bar.style.width = width + "%";
+          label.textContent = width + "%";
+        }
+      }, speed);
+    }
+
+    animateProgress("bar1", "label1", targets[0]);
+    animateProgress("bar2", "label2", targets[1]);
+    animateProgress("bar3", "label3", targets[2]);
+    animateProgress("bar4", "label4", targets[3]);
+    animateProgress("bar5", "label5", targets[4]);
+    animateProgress("bar6", "label6", targets[5]);
 
     // Contact form submission
     const contactForm = document.getElementById("contact-form");
