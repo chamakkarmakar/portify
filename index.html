@@ -11,41 +11,22 @@
   <body class="bg-gray-50 scroll-smooth">
     <!-- Header -->
     <header class="bg-white shadow-md fixed w-full top-0 z-50">
-      <nav class="container mx-auto px-6 py-4">
+      <nav id="navbar" class="container mx-auto px-6 py-4 transition-all delay-400 ease-in-out">
         <div class="flex justify-between items-center">
           <div class="text-2xl font-bold text-indigo-600">Chamak Karmakar</div>
 
           <!-- Desktop Menu -->
-          <div class="hidden md:flex space-x-8">
-            <a
-              href="#home"
-              class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition"
-              >Home</a
-            >
-            <a
-              href="#skills"
-              class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition"
-              >Skills</a
-            >
-            <a
-              href="#services"
-              class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition"
-              >Services</a
-            >
-            <a
-              href="#experience"
-              class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition"
-              >Experience</a
-            >
-            <a
-              href="#contact"
-              class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition"
-              >Contact</a
-            >
-          </div>
+          <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition">Home</a></li>
+                <li><a href="#about" class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition">About</a></li>
+                <li><a href="#skills" class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition">Skills</a></li>
+                <li><a href="#services" class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition">Services</a></li>
+                <li><a href="#experience" class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition">Experience</a></li>
+                <li><a href="#contact" class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition">Contact</a></li>
+            </ul>
 
           <!-- Mobile Menu Button -->
-          <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+          <button id="mobile-menu-btn" class="md:hidden text-gray-700 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -64,38 +45,33 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div
-          id="mobile-menu"
-          class="hidden md:hidden pt-4 pb-2 transition-all duration-300 ease-in-out"
-        >
-          <a
-            href="#home"
-            class="block py-2 text-gray-700 hover:text-indigo-600 border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out"
-            >Home</a
-          >
-          <a
-            href="#skills"
-            class="block py-2 text-gray-700 hover:text-indigo-600 border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out"
-            >Skills</a
-          >
-          <a
-            href="#services"
-            class="block py-2 text-gray-700 hover:text-indigo-600 border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out"
-            >Services</a
-          >
-          <a
-            href="#experience"
-            class="block py-2 text-gray-700 hover:text-indigo-600 border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out"
-            >Experience</a
-          >
-          <a
-            href="#contact"
-            class="block py-2 text-gray-700 hover:text-indigo-600 border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out"
-            >Contact</a
-          >
-        </div>
+       <ul class="md:hidden mt-4 space-y-2 hidden" id="mobile-menu">
+                <li><a href="#home" class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition">Home</a></li>
+                <li><a href="#about" class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition">About</a></li>
+                <li><a href="#skills" class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition">Skills</a></li>
+                <li><a href="#services" class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition">Services</a></li>
+                <li><a href="#experience" class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition">Experience</a></li>
+                <li><a href="#contact" class="border-b-2 border-transparent hover:border-indigo-200 transition delay-150 duration-300 ease-in-out text-gray-700 hover:text-indigo-600 transition">Contact</a></li>
+            </ul>
       </nav>
     </header>
+
+    <!-- Hero -->
+    <section id="home" class="bg-[url(assets/bg.jpg)] h-[100vh] flex items-center justify-center text-white bg-no-repeat bg-center bg-cover bg-fixed" >
+    <div class="text-center bg-black/50 p-6 rounded-xl w-full h-full flex flex-col justify-center items-center">
+      <div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-4 text-shadow">Hi, I'm 
+            <span class="gradient-text">Chamak Karmakar</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-200 font-semibold mb-8 delay-200 text-shadow">Frontend Developer</p>
+        <div class="delay-400">
+            <a href="#contact" class="bg-gradient-to-br from-blue-400 to-purple-500 hover:from-purple-500 hover:to-blue-400 text-white px-8 py-3 rounded-3xl font-semibold inline-block transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl">
+                Get In Touch
+            </a>
+        </div>
+      </div>
+    </div>
+    </section>
 
     <!-- About -->
     <section id="about" class="py-20">
@@ -132,7 +108,7 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section id="skills" class="py-20 bg-white">
       <div class="container mx-auto px-6">
         <h2 class="text-4xl font-bold text-center mb-12">Skills</h2>
@@ -221,18 +197,12 @@
       </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section id="services" class="py-16 md:py-24 bg-gray-50">
       <div class="container mx-auto px-6">
-        <h2
-          class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12"
-        >
-          My Services
-        </h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">My Services</h2>
         <div class="grid md:grid-cols-3 gap-8">
-          <div
-            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
-          >
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
             <div class="w-20 h-20 mx-auto mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                 <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -251,9 +221,7 @@
             </p>
           </div>
 
-          <div
-            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
-          >
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
             <div class="w-20 h-20 mx-auto mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -272,9 +240,7 @@
             </p>
           </div>
 
-          <div
-            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
-          >
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
             <div class="w-20 h-20 mx-auto mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -293,9 +259,7 @@
             </p>
           </div>
 
-          <div
-            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
-          >
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
             <div class="w-20 h-20 mx-auto mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -314,9 +278,7 @@
             </p>
           </div>
 
-          <div
-            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
-          >
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
             <div class="w-20 h-20 mx-auto mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                 <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -334,9 +296,7 @@
               applications.
             </p>
           </div>
-          <div
-            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
-          >
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
             <div class="w-20 h-20 mx-auto mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -355,11 +315,11 @@
             </p>
           </div>
         </div>
-      </div>
+        </div>
     </section>
 
     
-<!-- Work Experience Section -->
+    <!-- Experience -->
     <section id="experience" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Work Experience</h2>
@@ -403,7 +363,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section
       id="contact"
       class="py-16 md:py-24 bg-gradient-to-br from-indigo-50 to-white"
@@ -590,6 +550,27 @@
   </body>
 
   <script>
+    // Active nav link
+        const sections = document.querySelectorAll('section');
+        const navItems = document.querySelectorAll('#navbar a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('text-gray-700', 'border-indigo-200');
+                if (item.getAttribute('href').slice(1) === current) {
+                    item.classList.add('text-gray-700', 'border-indigo-200');
+                }
+            });
+        });
     // Mobile menu toggle
     const mobileMenuBtn = document.getElementById("mobile-menu-btn");
     const mobileMenu = document.getElementById("mobile-menu");
